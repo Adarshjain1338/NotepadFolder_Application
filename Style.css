@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-color: rgb(9, 12, 39);
+    color: white;
+}
+#header {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+}
+#header button{
+    margin: 5px 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+    box-shadow: none;
+    
+  }
+  #header button:hover{
+    transform: scale(1.1);
+    font-weight: 600;
+    transition:0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px 2px rgb(134, 130, 131);
+    /* background-color:  #28282B; */
+    color: black;
+    background: rgb(52,146,223);
+    background: radial-gradient(circle,rgba(189,52,233,1) 50%, rgba(52,146,223,1) 150%);
+}
+#breadCrumb {
+  background-color: rgb(190, 190, 190);
+  margin: 15px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+}
+#breadCrumb a{
+  background-color:rgb(90 90 90);
+  text-transform:uppercase;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-right: 5px solid black;
+}
+#breadCrumb a:hover{
+  background-color: rgb(44, 44, 172);
+}
+#container {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+  
+}
+.folder{
+    height: auto;
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid rgb(110, 105, 105);
+    background-color: #3492df;
+    border-radius: 10px;
+}
+.folder div{
+    display: flex;
+    justify-content: center;
+}
+.folder span {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant:small-caps;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(10, 27, 73);
+    box-shadow: 0px 2px 10px #1d1c1d;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.folder span:hover{
+    background-color: #9ea8d4;
+    color: black;
+}
+div[purpose = name]{
+    margin-top: 20px;
+}
+
+/*------------------------------------ Text file ---------------------- */
+.Text-file{
+  height: auto;
+  width: 150px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgb(110, 105, 105);
+  background-color: #bd34e9;
+  border-radius: 10px;
+}
+.Text-file div{
+  display: flex;
+  justify-content: center;
+}
+.Text-file span {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant:small-caps;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(87, 41, 87);
+  box-shadow: 0px 2px 10px #1d1c1d;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Text-file span:hover{
+  background-color: #c39ed4;
+  color: black;
+}
+div[purpose = name]{
+  margin-top: 20px;
+}
+/********************** Application css*************************** */
+#app {
+  
+  border: 3px solid rgb(82, 81, 139);
+  border-radius: 10px;
+  margin: 20px;
+}
+#app-title-bar{
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+#win-action{
+  display: flex;
+  justify-items: stretch;
+}
+
+#app-title{
+  padding: 4px;
+  background-color: #3492df;
+  justify-content: center;
+  text-align: center;
+  width: 92.8%;
+  font-size:1.8em;
+  border-radius:  5px 0px;
+
+  
+}
+#app-menu-bar{
+  background-color: lightslategray;
+  padding: 10px;
+  height: 40px;
+  display:flex;
+}
+/************************Notepad's menu bar*************************/
+.notepad-menu{
+  display: flex;
+}
+.notepad-menu{
+  width: 100%;
+  padding: 5px;
+}
+
+.notepad-menu * {
+  margin: 0px 5px;
+  padding: 2px;
+  cursor: pointer;
+  border: 0.222px solid black;
+  border-radius: 5px;
+}
+
+.notepad-menu span {
+  vertical-align: bottom;
+  height: min-content;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.notepad-menu span:hover {
+  border: 0.222px solid black;
+  background-color:rgba(5, 19, 56, 0.89);
+  color:whitesmoke;
+}
+
+.notepad-menu input[type="color"] {
+	width: 34px;
+	height: 34px;
+}
+.notepad-menu input[type="color"]:hover{
+  border: 0.222px solid darkgrey;
+  border-radius: 5px;
+}
+.notepad-menu [pressed=true] {
+  height: max-content;
+  padding: 5px;
+  border: 0.222px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: rgb(199, 71, 167);
+}
+.notepad-menu select{
+  margin: 6px;
+  appearance: none;
+  background-color:whitesmoke;
+  border: 2px groove darkviolet;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  width: min-content;
+  font-size: 1.1em;
+  cursor:pointer;
+  line-height: inherit;
+  text-align: center;
+}
+.notepad-menu select:hover{
+  background-color:#8a9be9;
+}
+.notepad-menu input[action = upload]{
+  display: none;
+}
+
+
+#app-body{
+  background-color: #9ea8d4;
+  height:60vw;
+}
+.notepad-body{
+  padding: 5px;
+  height: 100%;
+  max-width: 98.2%;
+}
+.notepad-body textarea{
+  font-size: medium;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  height: 96%;
+  width: 100%;
+}
+[purpose=download]{
+  display: none;
+}
+input[type="file"] {
+  font-size: 0.9em;
+  /* padding-top: 0.35rem; */
+}
+input[type="color"] {
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    max-width: 4%;
+
+}
+.notepad-menu span{
+  vertical-align:middle;
+}
+
+/*********************Album css****************/
+.album{
+  height: auto;
+  width: 150px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgb(110, 105, 105);
+  background-color: #34df8a;
+  border-radius: 10px;
+}
+.album div{
+  display: flex;
+  justify-content: center;
+}
+.album span {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant:small-caps;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(10, 73, 44);
+  box-shadow: 0px 2px 10px #1d1c1d;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.album span:hover{
+  background-color: #9ed4bb;
+  color: black;
+}
+div[purpose = name]{
+  margin-top: 20px;
+}
+
+/********************************Album menu********************************/
+.album-menu{
+  width: 100%;
+  padding: 5px;
+}
+
+.album-menu * {
+  margin: 0px 5px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0.222px solid black;
+  border-radius: 5px;
+
+}
+
+.album-menu span {
+  vertical-align: bottom;
+  
+}
+
+.album-menu span:hover {
+  background-color: rgba(5, 19, 56, 0.89);
+  /* color:; */
+}
+
+/*********************************close icon*********************/
+
+#win-action span:hover{
+  padding: 4px;
+  background-color:#3446e941;
+
+}
+span#app-close:hover {
+  background-color: rgba(255, 0, 0, 0.829);
+}
+#win-action span{
+  padding: 4px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 2px;
+}
+
+
+/********************************* Album Body ********************************/
+.album-body{
+  height: max-content;
+  width: 100%;
+  padding: 5px 0px;
+}
+.picture-list{
+  display:flex;
+  border:2.5px solid black ;
+  border-radius: 10px;
+  height: 8rem;
+  padding: 10px;
+  padding-right: 5px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.473);
+  
+  
+}
+.picture-list img{
+  width: fit-content;
+  height:95%;
+  border-radius:5px;
+  margin: 8px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.picture-list img:hover{
+  box-shadow: 0px 2px 15px 5px rgb(204, 83, 198);
+}
+.picture-view{
+  border: 1px solid black;
+  height:44.5vw;
+  margin: 10px;
+  margin-top:15px;
+  padding: 5px;
+  display: flex;
+
+  
+}
+.picture-view > div{
+  height: 100%;
+  border: 0.25px solid white;
+  background-color:#090030;
+}
+
+.picture-view .move-left{
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.picture-view .picture-main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.picture-view .picture-main img{
+  height: 80%;
+  width: 80%;
+}
+
+.picture-list img[pressed = true]{
+transform:  scale(1.1);
+box-shadow:  0px 2px 15px 5px rgb(0, 0, 0);
+}
+
+.picture-view .move-right{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.picture-view .move-left span{
+  font-size: 10em;
+}
+.picture-view .move-right span{
+  font-size: 10em;
+}

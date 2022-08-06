@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="Stylesheet" href="Style.css" />
+    <title>First Project</title>
+</head>
+<body>
+    <div id="header">
+        <button id="addFolder">Add Folder</button>
+        <button id="addTextFile">Add Text File</button>
+            <!-- for Album application  -->
+        <!-- <button id="addAlbum">Add Album</button> -->
+            <!-- end Album application  -->
+    </div>
+
+    <div id="breadCrumb">
+        <a purpose = "path" rid= "-1">Root</a>
+    </div>
+
+    <div id="container">
+        
+    </div>
+
+    <div id="app">
+        <div id="app-title-bar">
+            <div id="app-title">Name of File</div>
+            <div id="win-action">
+                <span class="material-icons">minimize</span>
+                <span class="material-icons">fullscreen</span>
+                <span id = "app-close"class="material-icons">close</span>
+            </div>
+        </div>
+        <div id="app-menu-bar"></div>
+        <div id="app-body"></div>
+    </div>
+
+    <template id="templates">
+
+        <div class="folder" rid = "" pid = "">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose ="name"></div>
+        </div>
+
+        <div class="Text-file" rid = "" pid = "">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose ="name"></div>
+        </div>
+        <!-- for Album application  -->
+        <!-- <div class="album" rid = "" pid = "">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose ="name"></div>
+        </div> -->
+        <!-- end of Album application  -->
+        <a purpose="path" rid="-1"></a>
+        <div purpose="notepad-menu" class="notepad-menu">
+            <span action="save" class="material-icons">save</span>
+            <span pressed="false" action="bold" class="material-icons">format_bold</span>
+            <span pressed="false" action="italic" class="material-icons">format_italic</span>
+            <span pressed="false" action="underline" class="material-icons">format_underline</span>
+            <input type="color" action="bg-color" />
+            <input type="color" action="fg-color" />
+            <select action="font-family">
+                <option value="monospace">monospace</option>
+                <option value="serif">serif</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="cursive">cursive</option>
+            </select>
+            <select action="font-size">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+            </select>
+            <span action = "forupload" class = "material-icons">upload</span>
+            <input action="upload" type="file"/>
+            <a purpose="download" href="http://www.google.com" target="_blank">Link</a>
+            <span action="download" class="material-icons">download</span> 
+        </div>
+
+        <div purpose = "notepad-body" class="notepad-body">
+            <textarea>Type Here . . . </textarea>
+        </div>
+            <!-- for Album application  -->
+        <!-- <div purpose = "album-menu"class="album-menu">
+            <span action = "save"class="material-icons">save</span>
+            <span action = "upload"class="material-icons">upload</span>
+            <span action = "download"class="material-icons">download</span>
+
+            <span action = "add" class="material-icons">add</span>
+            <span action = "delete" class="material-icons">delete</span>
+            <span action = "right " class="material-icons">chevron_left</span>
+            <span action = "left " class="material-icons">chevron_right</span>
+
+            <span action = "play"class="material-icons">play_circle</span>
+            <span action = "pause"class="material-icons">pause</span>
+        </div>
+        <div purpose = "album-body"class="album-body">
+            <div class="picture-list">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://image.shutterstock.com/image-vector/slogan-life-short-enjoy-simple-260nw-1750856333.jpg" alt="">
+                <img src="https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img src="https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                
+            </div>
+            <div class="picture-view">
+                <div class="move-left">
+                    <span action = "left" class="material-icons">arrow_left</span>
+                </div>
+                <div class="picture-main">
+                    <img src="" alt="">
+                    
+                </div>
+                <div class="move-right">
+                    <span action = "right" class="material-icons">arrow_right</span>
+                </div>
+            </div>
+        </div> -->
+        <!-- end Album application  -->
+    </template>
+
+
+
+    <script type="text/javascript" src="Index.js"></script>
+</body>
+</html>
