@@ -22,7 +22,7 @@
     btnAddfolder.addEventListener('click', addFolder);
     btnTextFile.addEventListener('click', addTextFile);
     //  for Album application
-    btnAddAlbum.addEventListener('click', addAlbum);
+    // btnAddAlbum.addEventListener('click', addAlbum);
     //  end Album application
     aRootPath.addEventListener('click', viewFolderFromPath);
     appClose.addEventListener("click", closeApp);
